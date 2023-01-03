@@ -1,0 +1,61 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+
+}
+body{
+    height: 29vw;
+    width: 99vw;
+    background-image: url(dj.jpg);
+    background-size: 100% 100%;
+}
+.keys{
+    width: 95%;
+    position: relative;
+    height: 20vh;
+    display: flex;
+    margin: 37vh auto;
+    /* border: 2px solid red; */
+    justify-content: space-between;
+    align-items: center;
+}
+.key
+{
+    border-radius: 0.5rem;
+    border: 0.4rem solid black;
+    height: 80%;
+    width: 8%;
+    background-color: aquamarine;
+    transition: all 0.07 ease;
+}
+kbd
+{
+    display: block;
+    /* font-size: 4rem; */
+    font-size: 8vh;
+    text-align:center;
+    /* font-weight: bold; */
+}
+span{
+    font-size: 1rem;
+    /* font-size: 4vh; */
+    color: rgb(158, 2, 2);
+    text-transform: uppercase;
+    text-align: center;
+    
+}
+.playing
+{
+    transform: scale(1.1);
+    border-color: #ffc600;
+    box-shadow: 0 0 1rem  #ffc600;
+}
+footer{
+    width: 100vw;
+    color:white;
+    background-color: black;
+    text-align: center;
+    position: relative;
+    bottom: -22.5px;
+}

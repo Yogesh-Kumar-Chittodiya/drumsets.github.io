@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drum Set</title>
+    <link rel="icon" href="drum1.jpg">
+    <link rel="stylesheet" href="style.css">
+    <script src="JavaScript/Sounds.js"></script>
+    <script src="JavaScript/SongsEvent.js"></script>
+    <script src="JavaScript/functions.js"></script>
+</head>
+
+<body>
+    <div class="keys">
+        <div id="A" data-key="65" class="key" onclick="clap()" onmouseout="clap1()">
+            <kbd>A</kbd>
+            <center><span id="clap" class="sound">clap</span></center>
+        </div>
+        <div id="S" data-key="83" class="key" onclick="hihat()" onmouseout="hihat1()">
+            <kbd>S</kbd>
+            <center><span id="hihat" class="sound">hihat</span></center>
+        </div>
+        <div id="D" data-key="68" class="key" onclick="kick()" onmouseout="kick1()">
+            <kbd>D</kbd>
+            <center><span id="kick" class="sound">kick</span></center>
+        </div>
+        <div id="F" data-key="70"  class="key" onclick="openhat()" onmouseout="openhat1()">
+            <kbd>F</kbd>
+            <center><span id="openhat" class="sound">openhat</span></center>
+        </div>
+        <div id="G" data-key="71" class="key" onclick="boom()" onmouseout="boom1()">
+            <kbd>G</kbd>
+            <center><span id="boom" class="sound">boom</span></center>
+        </div>
+        <div id="H" data-key="72" class="key" onclick="ride()" onmouseout="ride1()">
+            <kbd>H</kbd>
+            <center><span id="ride" class="sound">ride</span></center>
+        </div>
+        <div id="J" data-key="74" class="key" onclick="snare()" onmouseout="snare1()">
+            <kbd>J</kbd>
+            <center><span id="snare" class="sound">snare</span></center>
+        </div>
+        <div id="K" data-key="75" class="key" onclick="tom()" onmouseout="tom1()">
+            <kbd>K</kbd>
+            <center><span id="tom" class="sound">tom</span></center>
+        </div>
+        <div id="L" data-key="76" class="key" onclick="tink()" onmouseout="tink1()">
+            <kbd>L</kbd>
+            <center><span id="tink" class="sound">tink</span></center>
+        </div>   
+    </div>
+    
+    <audio id="a1" src="life_akhil.mp3"></audio>
+    
+    <audio id="1" src="songs/1.mp3"></audio>
+    <audio id="2" src="songs/2.mp3"></audio>
+    <audio id="3" src="songs/3.mp3"></audio>
+    <audio id="4" src="songs/4.mp3"></audio>
+    <audio id="5" src="songs/5.mp3"></audio>
+    <audio id="6" src="songs/6.mp3"></audio>
+    <audio id="7" src="songs/7.mp3"></audio>
+    <audio id="8" src="songs/8.mp3"></audio>
+    <audio id="9" src="songs/9.mp3"></audio>
+    <audio id="0" src="songs/0.mp3"></audio>
+
+    <!-- <audio data-key="65" src="sounds_clap.wav"></audio>
+        <audio data-key="83" src="sounds_hihat.wav"></audio>
+    <audio data-key="68" src="sounds_kick.wav"></audio>
+    <audio data-key="70" src="sounds_openhat.wav"></audio>
+    <audio data-key="71" src="sounds_boom.wav"></audio>
+    <audio data-key="72" src="sounds_ride.wav"></audio>
+    <audio data-key="74" src="sounds_snare.wav"></audio>
+    <audio data-key="75" src="sounds_tom.wav"></audio>
+    <audio data-key="76" src="sounds_tink.wav"></audio>
+
+    <script>
+        window.addEventListener("keydown", (e)=>
+        {
+            const audio=document.querySelector('audio[data-key="${e.keyCode}"]');
+            var key=document.querySelector('.key[data-key="${e.keyCode}"]');
+            console.log(audio);
+        
+            // if (!audio) return;
+            audio.play();
+            audio.currentTime=0;
+            key.classList.add("playing");
+        });
+    </script> -->
+
+    <footer id="f">All copyrights &copy; are reserved.</footer>
+</body>
+</html>
